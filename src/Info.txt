@@ -1,0 +1,7 @@
+Comparison based sorting : Sort thru making comparisons between pairs of elements, analyze run time in terms of numbers of comparisons, efficient for small data set and data that are already
+almost sorted
+In the file, there are the following :
+BogoSort
+BubbleSort
+InsertionSort
+SelectionSort
