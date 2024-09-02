@@ -1,5 +1,4 @@
 import java.util.*;
-
 //Compare pairs of adjacent elements, swap adjacent elements if they are not in order, repeat until no swaps are needed
 
 //Best case: already sorted O(n)
@@ -9,7 +8,7 @@ public class BubbleSort {
         boolean repeat = true;
         while(repeat){
             repeat = false;
-            for(int i = 1; i < arr.length-1; i++){
+            for(int i = 1; i < arr.length; i++){
                 if(arr[i] < arr[i-1]){
                     int x = arr[i-1];
                     arr[i-1] = arr[i];

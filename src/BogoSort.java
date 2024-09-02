@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Random;
 
 // Best case: O(n) if already sorted
 // Worst case: unbounded if not
