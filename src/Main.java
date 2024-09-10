@@ -1,3 +1,9 @@
+import ComparisonBasedSort.BogoSort;
+import ComparisonBasedSort.BubbleSort;
+import ComparisonBasedSort.InsertionSort;
+import ComparisonBasedSort.SelectionSort;
+import NonComparisonBasedSort.CountingSort;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -50,7 +56,7 @@ public class Main {
         }
 
         int[] nums4 = {3, 2, 5, 1, 4, 10 , 12, 7};
-        //Insertion Sort
+        //Selection Sort
         SelectionSort SelectionSorter = new SelectionSort();
 
         int[] retNumsSelect =  SelectionSorter.SelectionSortAlg(nums4);
@@ -64,17 +70,25 @@ public class Main {
             }
         }
 
-    }
 
-    //check if is sorted
-    public static boolean isSorted(int[] arr) {
-        for (int i = 0; i < arr.length-1; i++) {
-            if(arr[i] > arr[i+1]) {
-                return false;
+        int[] nums5 = {3, 2, 5, 1, 4, 10 , 12, 7};
+        //Counting Sort
+        CountingSort CountingSorter = new CountingSort();
+
+        int[] retNumsCounting =  CountingSorter.CountingSortAlg(nums5);
+        System.out.println("sorted array with CountingSort: ");
+        for (int i = 0; i < retNumsCounting.length; i++) {
+            if(i != retNumsCounting.length - 1) {
+                System.out.print(retNumsSelect[i] + ", ");
+            }
+            else {
+                System.out.print(retNumsSelect[i] + "\n");
             }
         }
-        return true;
+
+
     }
+
 
 
 }

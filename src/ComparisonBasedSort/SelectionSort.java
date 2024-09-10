@@ -1,3 +1,4 @@
+package ComparisonBasedSort;
 //Find minimum unsorted element and swap it with the first unsorted element
 
 //Best case: O(n^2)
@@ -20,11 +21,11 @@ public class SelectionSort {
 
     }
 
-    // SelectionSort algorithm
+    // ComparisonBasedSort.SelectionSort algorithm
     public static int[] SelectionSortAlg(int[] arr) {
-        while (!Main.isSorted(arr)) {
-            SelectionSort(arr);
-        }
+
+        SelectionSort(arr);
+
         return arr;
     }
 

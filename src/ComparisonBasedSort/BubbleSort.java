@@ -1,4 +1,5 @@
-import java.util.*;
+package ComparisonBasedSort;
+
 //Compare pairs of adjacent elements, swap adjacent elements if they are not in order, repeat until no swaps are needed
 
 //Best case: already sorted O(n)
@@ -20,11 +21,11 @@ public class BubbleSort {
 
     }
 
-    // BogoSort algorithm
+    // ComparisonBasedSort.BogoSort algorithm
     public static int[] BubbleSortAlg(int[] arr) {
-        while (!Main.isSorted(arr)) {
-            BubbleSort(arr);
-        }
+
+        BubbleSort(arr);
+
         return arr;
     }
 

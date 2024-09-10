@@ -1,4 +1,4 @@
-//Process each elements one by one, shift left until in correct order
+package ComparisonBasedSort;//Process each elements one by one, shift left until in correct order
 
 //Best case: already sorted O(n)
 //Worst case: sorted in reverse order O(n^2)
@@ -16,11 +16,11 @@ public class InsertionSort {
 
     }
 
-    // InsertionSort algorithm
+    // ComparisonBasedSort.InsertionSort algorithm
     public static int[] InsertionSortAlg(int[] arr) {
-        while (!Main.isSorted(arr)) {
-            InsertionSort(arr);
-        }
+
+        InsertionSort(arr);
+
         return arr;
     }
 
